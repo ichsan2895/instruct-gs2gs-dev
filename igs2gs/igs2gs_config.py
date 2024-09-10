@@ -48,6 +48,7 @@ igs2gs_method = MethodSpecification(
         pipeline=InstructGS2GSPipelineConfig(
             datamanager=InstructGS2GSDataManagerConfig(
                 dataparser=NerfstudioDataParserConfig(load_3D_points=True),
+                cache_images_type="uint8",
             ),
             model=InstructGS2GSModelConfig(),
         ),
